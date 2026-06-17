@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ca" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perruqueria i Estètica Nuri | Flaçà</title>
+    <!-- Tailwind CSS per un disseny modern i ràpid -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- FontAwesome per a les icones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800 antialiased">
+
+    <!-- NAV BAR -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-stone-100 shadow-xs">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-wide text-amber-800">PERRUQUERIA NURI</a>
+            <div class="hidden md:flex space-x-8 font-medium text-stone-600">
+                <a href="#inici" class="hover:text-amber-700 transition">Inici</a>
+                <a href="#serveis" class="hover:text-amber-700 transition">Serveis</a>
+                <a href="#opinions" class="hover:text-amber-700 transition">Opinions</a>
+                <a href="#contacte" class="hover:text-amber-700 transition">Contacte</a>
+            </div>
+            <a href="tel:972488484" class="bg-amber-800 text-white px-5 py-2 rounded-full font-medium hover:bg-amber-900 transition flex items-center gap-2">
+                <i class="fa-solid fa-phone text-sm"></i> 972 48 84 84
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="inici" class="relative bg-stone-100 py-20 md:py-32 overflow-hidden">
+        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6 z-10">
+                <div class="inline-flex items-center gap-2 bg-amber-100/60 text-amber-900 px-4 py-1.5 rounded-full text-sm font-semibold">
+                    <i class="fa-solid fa-star text-amber-500"></i> 4,8 de puntuació a Google Maps
+                </div>
+                <h1 class="text-4xl md:text-6xl font-black text-stone-900 leading-tight">
+                    Ressalta la teva bellesa natural
+                </h1>
+                <p class="text-lg text-stone-600 max-w-md">
+                    Benvinguts a Perruqueria i Estètica Nuri. Un gran equip de professionals innovadores i amables al teu servei a Flaçà.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 pt-2">
+                    <a href="tel:972488484" class="bg-stone-900 text-white text-center px-8 py-3.5 rounded-xl font-medium hover:bg-stone-800 transition shadow-lg shadow-stone-900/10">
+                        Demana Cita
+                    </a>
+                    <a href="#opinions" class="bg-white text-stone-800 text-center px-8 py-3.5 rounded-xl font-medium hover:bg-stone-100 transition border border-stone-200">
+                        Què diuen de nosaltres?
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Imatges simulades (Substitueix pels teus fitxers reals si vols) -->
+            <div class="relative flex justify-center">
+                <div class="relative w-72 h-96 bg-amber-800/10 rounded-2xl overflow-hidden shadow-2xl border-4 border-white transform -rotate-3">
+                    <img src="image_961d3d.png" alt="Perruqueria Nuri Interior" class="w-full h-full object-cover onerror-fallback">
+                </div>
+                <div class="absolute bottom-[-20px] right-4 w-52 h-64 bg-stone-200 rounded-2xl overflow-hidden shadow-2xl border-4 border-white transform rotate-6 hidden sm:block">
+                    <img src="image_961cff.png" alt="Detall Estètica" class="w-full h-full object-cover onerror-fallback">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HORARI I INFO RÀPIDA -->
+    <section class="bg-white py-10 border-b border-stone-100">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+            <div class="flex items-center gap-4 justify-center md:justify-start">
+                <div class="w-12 h-12 rounded-full bg-amber-50 flex items-center justify-center text-amber-800 text-xl">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                    <h3 class="font-bold text-stone-900">On som</h3>
+                    <p class="text-stone-500 text-sm">Carrer de Lestacio, 6, 17463 Flaçà</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-4 justify-center md:justify-start">
+                <div class="w-12 h-12 rounded-full bg-amber-50 flex items-center justify-center text-amber-800 text-xl">
+                    <i class="fa-solid fa-clock"></i>
+                </div>
+                <div>
+                    <h3 class="font-bold text-stone-900">Horari d'avui</h3>
+                    <p class="text-stone-500 text-sm">Obert · Tanca a les 13:00 i de 15:00 a tancament</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-4 justify-center md:justify-start">
+                <div class="w-12 h-12 rounded-full bg-amber-50 flex items-center justify-center text-amber-800 text-xl">
+                    <i class="fa-solid fa-certificate"></i>
+                </div>
+                <div>
+                    <h3 class="font-bold text-stone-900">Equip d'èxit</h3>
+                    <p class="text-stone-500 text-sm">Felicitats a les 3, sou genials!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVEIS -->
+    <section id="serveis" class="py-20 max-w-6xl mx-auto px-4">
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+            <h2 class="text-3xl md:text-4xl font-bold text-stone-900">Els Nostres Serveis</h2>
+            <div class="w-12 h-1 bg-amber-700 mx-auto rounded-full"></div>
+            <p class="text-stone-500">Cuidem de tu amb les últimes tendències en perruqueria i tractaments d'estètica innovadors.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Servei 1 -->
+            <div class="bg-white p-8 rounded-2xl shadow-xs border border-stone-100 hover:shadow-md transition space-y-4">
+                <div class="w-12 h-12 rounded-xl bg-stone-900 text-white flex items-center justify-center text-xl">
+                    <i class="fa-solid fa-scissors"></i>
+                </div>
+                <h3 class="text-xl font-bold text-stone-900">Perruqueria Moderna</h3>
+                <p class="text-stone-600 text-sm leading-relaxed">Talls, coloracions, metxes i pentinats fets per un equip expert i innovador que s'adapta al teu estil.</p>
+            </div>
+            <!-- Servei 2 -->
+            <div class="bg-white p-8 rounded-2xl shadow-xs border border-stone-100 hover:shadow-md transition space-y-4">
+                <div class="w-12 h-12 rounded-xl bg-stone-900 text-white flex items-center justify-center text-xl">
+                    <i class="fa-solid fa-sparkles"></i>
+                </div>
+                <h3 class="text-xl font-bold text-stone-900">Estètica Avançada</h3>
+                <p class="text-stone-600 text-sm leading-relaxed">Tractaments facials i corporals per sortir completament renovada, relaxada i radiant.</p>
+            </div>
+            <!-- Servei 3 -->
+            <div class="bg-white p-8 rounded-2xl shadow-xs border border-stone-100 hover:shadow-md transition space-y-4">
+                <div class="w-12 h-12 rounded-xl bg-stone-900 text-white flex items-center justify-center text-xl">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <h3 class="text-xl font-bold text-stone-900">Tracte Personalitzat</h3>
+                <p class="text-stone-600 text-sm leading-relaxed">Ens enfoquem en oferir-te una experiència agradable, propera i amb total professionalitat.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- OPINIONS (DADES REALS DE GOOGLE MAPS) -->
+    <section id="opinions" class="bg-stone-900 text-white py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-6">
+                <div class="space-y-3">
+                    <h2 class="text-3xl md:text-4xl font-bold">La Millor Perruqueria del Món</h2>
+                    <p class="text-stone-400">Això és el que diuen els nostres clients reals a Google. La teva satisfacció és el nostre èxit.</p>
+                </div>
+                <div class="bg-stone-800 p-4 rounded-xl flex items-center gap-4 border border-stone-700 shrink-0">
+                    <div class="text-4xl font-black text-amber-400">4,8</div>
+                    <div>
+                        <div class="text-amber-400 text-sm flex gap-0.5">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="text-xs text-stone-400 mt-1">Basat en 41 ressenyes</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grid de ressenyes -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Ressenya 1 -->
+                <div class="bg-stone-800 p-6 rounded-xl border border-stone-700/50 flex flex-col justify-between">
+                    <p class="text-stone-300 italic text-sm leading-relaxed">"La millor perruqueria del món! Sempre surto molt contenta i molt guapaaa!!! Sous les millors!"</p>
+                    <div class="mt-6 flex items-center gap-3 pt-4 border-t border-stone-700">
+                        <div class="w-10 h-10 rounded-full bg-stone-700 flex items-center justify-center font-bold text-amber-400">GA</div>
+                        <div>
+                            <h4 class="font-bold text-sm text-white">Gema Alcalá-Bejarano Perez</h4>
+                            <div class="text-amber-400 text-xs flex gap-0.5 mt-0.5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ressenya 2 -->
+                <div class="bg-stone-800 p-6 rounded-xl border border-stone-700/50 flex flex-col justify-between">
+                    <p class="text-stone-300 italic text-sm leading-relaxed">"M’encanta! Les he descobert fa poc i entrar allà és aturar el temps, relaxar-se i sortir nou 💚 ..."</p>
+                    <div class="mt-6 flex items-center gap-3 pt-4 border-t border-stone-700">
+                        <div class="w-10 h-10 rounded-full bg-stone-700 flex items-center justify-center font-bold text-amber-400">NM</div>
+                        <div>
+                            <h4 class="font-bold text-sm text-white">Neus Matamala</h4>
+                            <div class="text-amber-400 text-xs flex gap-0.5 mt-0.5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ressenya 3 -->
+                <div class="bg-stone-800 p-6 rounded-xl border border-stone-700/50 flex flex-col justify-between">
+                    <p class="text-stone-300 italic text-sm leading-relaxed">"Son profesionales, y agradables. Yo siempre salgo contenta."</p>
+                    <div class="mt-6 flex items-center gap-3 pt-4 border-t border-stone-700">
+                        <div class="w-10 h-10 rounded-full bg-stone-700 flex items-center justify-center font-bold text-amber-400">MG</div>
+                        <div>
+                            <h4 class="font-bold text-sm text-white">MariaTeresa Gomez</h4>
+                            <div class="text-amber-400 text-xs flex gap-0.5 mt-0.5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ressenya 4 -->
+                <div class="bg-stone-800 p-6 rounded-xl border border-stone-700/50 flex flex-col justify-between">
+                    <p class="text-stone-300 italic text-sm leading-relaxed">"Son un gran equipo, muy profesionales y amables. Encantadoras, las adoro!!!"</p>
+                    <div class="mt-6 flex items-center gap-3 pt-4 border-t border-stone-700">
+                        <div class="w-10 h-10 rounded-full bg-stone-700 flex items-center justify-center font-bold text-amber-400">JM</div>
+                        <div>
+                            <h4 class="font-bold text-sm text-white">Josep Manuel López Gifreu</h4>
+                            <div class="text-amber-400 text-xs flex gap-0.5 mt-0.5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ressenya 5 -->
+                <div class="bg-stone-800 p-6 rounded-xl border border-stone-700/50 flex flex-col justify-between">
+                    <p class="text-stone-300 italic text-sm leading-relaxed">"Molt be sou genials gracies x com tracteu a la gent felicitats a les 3!"</p>
+                    <div class="mt-6 flex items-center gap-3 pt-4 border-t border-stone-700">
+                        <div class="w-10 h-10 rounded-full bg-stone-700 flex items-center justify-center font-bold text-amber-400">MM</div>
+                        <div>
+                            <h4 class="font-bold text-sm text-white">María Rosa Marin Sanchez</h4>
+                            <div class="text-amber-400 text-xs flex gap-0.5 mt-0.5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ressenya 6 -->
+                <div class="bg-stone-800 p-6 rounded-xl border border-stone-700/50 flex flex-col justify-between">
+                    <p class="text-stone-300 italic text-sm leading-relaxed">"Són unes grans professionals i molt bon tracte. Molt amables i em semblen molt innovadores."</p>
+                    <div class="mt-6 flex items-center gap-3 pt-4 border-t border-stone-700">
+                        <div class="w-10 h-10 rounded-full bg-stone-700 flex items-center justify-center font-bold text-amber-400">AP</div>
+                        <div>
+                            <h4 class="font-bold text-sm text-white">Anna Pou / Dolors Suñé</h4>
+                            <div class="text-amber-400 text-xs flex gap-0.5 mt-0.5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTE I MAPA -->
+    <section id="contacte" class="py-20 max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-stone-900">Vine a veure'ns</h2>
+            <p class="text-stone-600">Estem ubicades al cor de Flaçà. Truca'ns per reservar la teva hora o passa a saludar-nos!</p>
+            
+            <div class="space-y-4 pt-4">
+                <div class="flex items-start gap-4">
+                    <div class="w-10 h-10 rounded-lg bg-stone-100 flex items-center justify-center text-stone-700 shrink-0"><i class="fa-solid fa-phone"></i></div>
+                    <div>
+                        <h4 class="font-bold text-stone-900">Telèfon de contacte</h4>
+                        <a href="tel:972488484" class="text-amber-800 font-medium hover:underline">972 48 84 84</a>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4">
+                    <div class="w-10 h-10 rounded-lg bg-stone-100 flex items-center justify-center text-stone-700 shrink-0"><i class="fa-solid fa-map-pin"></i></div>
+                    <div>
+                        <h4 class="font-bold text-stone-900">Adreça</h4>
+                        <p class="text-stone-600">Carrer de Lestacio, 6, 17463 Flaçà, Girona</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4">
+                    <div class="w-10 h-10 rounded-lg bg-stone-100 flex items-center justify-center text-stone-700 shrink-0"><i class="fa-solid fa-location-crosshairs"></i></div>
+                    <div>
+                        <h4 class="font-bold text-stone-900">Codi Plus de Google Maps</h4>
+                        <p class="text-stone-600">2XW4+QX Flaçà</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CAPTURA DEL MAPA O DE LA BOTIGA -->
+        <div class="bg-white p-4 rounded-2xl shadow-xl border border-stone-200/60 transform rotate-1">
+            <img src="image_961cdc.png" alt="Informació i ubicació de Perruqueria Nuri" class="w-full h-auto rounded-xl object-cover onerror-fallback">
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-stone-100 py-8 border-t border-stone-200 text-center text-sm text-stone-500">
+        <p>&copy; 2026 Perruqueria i Estètica Nuri. Tots els drets reservats.</p>
+        <p class="text-xs mt-1 text-stone-400">Fet amb <i class="fa-solid fa-heart text-red-500"></i> per a GitHub Pages.</p>
+    </footer>
+
+    <!-- Script per ocultar imatges si el fitxer local no existís encara al repositori -->
+    <script>
+        document.querySelectorAll('.onerror-fallback').forEach(img => {
+            img.onerror = function() {
+                this.parentElement.style.backgroundColor = '#e7e5e4'; // color stone-300 de fons si no hi ha foto
+                this.style.display = 'none';
+            };
+        });
+    </script>
+</body>
+</html>
